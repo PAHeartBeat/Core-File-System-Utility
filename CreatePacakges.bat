@@ -20,6 +20,7 @@ del iPAHeartBeat.Core.Extensions.dll
 del iPAHeartBeat.Core.Dependency.dll
 del iPAHeartBeat.Core.Extensions-net471.dll
 del iPAHeartBeat.Core.Dependency-net471.dll
+del iPAHeartBeat.Core.FileSystemUtility.xml
 rename iPAHeartBeat.Core.FileSystemUtility-net471.xml iPAHeartBeat.Core.FileSystemUtility.xml
 cd..
 cd..
