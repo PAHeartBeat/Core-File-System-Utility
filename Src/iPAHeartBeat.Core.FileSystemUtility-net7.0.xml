@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iPAHeartBeat.Core.FileSystemUtility</name>
+    </assembly>
+    <members>
+        <member name="T:iPAHeartBeat.Core.IO.CacheFileCategories">
+            <summary>
+            Cache file categories.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.CacheFileCategories.None">
+            <summary>
+            Category None as un categorized files.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.CacheFileCategories.Image">
+            <summary>
+            File Categorized and Full Image file for feature.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.CacheFileCategories.Icon">
+            <summary>
+            Image file categorized as Icon file for the feature or small intractable item.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.CacheFileCategories.Thumbnail">
+            <summary>
+            Image file categories as Thumbnail of main Image file.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.CacheFileCategories.Voice">
+            <summary>
+            File categorized as Sound or Voice file to use as Sound Clip.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.CacheFileCategories.Video">
+            <summary>
+            File Categorized as Video file to use with Video player or Timeline as part of Intro or main Content.
+            </summary>
+        </member>
+        <member name="T:iPAHeartBeat.Core.IO.File">
+            <summary>
+            Utility Class to Read Write File in Unity with a few extra options.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.File._log">
+            <summary>
+            Static instance of the logger to use different logger with different system or game modes.
+            </summary>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.File.FileExists(System.String,System.String)">
+            <summary>
+            Will check about the file is exists or not at particular path.
+            </summary>
+            <param name="path">File location where needs to be check.</param>
+            <param name="fileName">name of the file which needs to be check.</param>
+            <returns>true if file exists at the location other wiser false.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.File.FileExists(System.String)">
+            <summary>
+            Will check about the file is exists or not at particular path.
+            </summary>
+            <param name="fileNameWithPath">fully qualified File name with path/location where needs to be check.</param>
+            <returns>true if file exists at the location other wiser false.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.File.ReadFile(System.String,System.String)">
+            <summary>
+            Will try to read file form provided location.
+            </summary>
+            <param name="path">File location where needs to be read.</param>
+            <param name="fileName">name of the file which needs to be read.</param>
+            <returns>string data if file exists at the location other return empty string.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.File.ReadFile(System.String)">
+            <summary>
+            Will try to read file form provided location.
+            </summary>
+            <param name="fileNameWithPath">fully qualified File name with path/location where needs to be read.</param>
+            <returns>string data if file exists at the location other return empty string.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.File.WriteFile(System.String,System.String,System.String)">
+            <summary>
+            Will try to read file form provided location.
+            </summary>
+            <param name="path">File location where data needs to be write.</param>
+            <param name="fileName">name of the file which be used to store the data.</param>
+            <param name="data">string converted data of the file which needs to be write on disk.</param>
+            <returns>true if file written successfully otherwise false.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.File.WriteFile(System.String,System.String,System.String,iPAHeartBeat.Core.IO.FileWriteMode)">
+            <summary>
+            Will try to read file form provided location.
+            </summary>
+            <param name="path">File location where data needs to be write.</param>
+            <param name="fileName">name of the file which be used to store the data.</param>
+            <param name="data">string converted data of the file which needs to be write on disk.</param>
+            <param name="mode">File write mode like it will be overwrite or appended in existing file.</param>
+            <returns>true if file written successfully otherwise false.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.File.WriteFile(System.String,System.String,System.Byte[])">
+            <summary>
+            Will try to read file form provided location.
+            </summary>
+            <param name="path">File location where data needs to be write.</param>
+            <param name="fileName">name of the file which be used to store the data.</param>
+            <param name="data">array of byte as data which needs to write on disk.</param>
+            <returns>true if file written successfully otherwise false.</returns>
+        </member>
+        <member name="T:iPAHeartBeat.Core.IO.FileWriteMode">
+            <summary>
+            File Write mode.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.FileWriteMode.CreateOverwrite">
+            <summary>
+            File Mode to Create a new or overwrite existing File.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.FileWriteMode.Append">
+            <summary>
+            File Mode to Append New data in Existing File.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.FileWriteMode.Open">
+            <summary>
+            File Mode to Just Open File as Read-Only.
+            </summary>
+        </member>
+        <member name="T:iPAHeartBeat.Core.IO.Data.SearchOption">
+            <summary>
+            Search option used by File Class to search data.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.Equal">
+            <summary>
+            Compare whole value should as equal or same.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.NotEqual">
+            <summary>
+            Compare whole value should not be the equal or same.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.StartWith">
+            <summary>
+            Compare value as text with a few starting character should be same.
+            This uses <see cref="F:System.StringComparison.OrdinalIgnoreCase"/> to compare the data.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.EndWith">
+            <summary>
+            Compare value as text with a few last character should be same.
+            This uses <see cref="F:System.StringComparison.OrdinalIgnoreCase"/> to compare the data.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.Contains">
+            <summary>
+            Compare value as text with a few character should be part of the data field.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.NotContains">
+            <summary>
+            Compare value as text with a few character should not be part of the data field.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.NotStartWith">
+            <summary>
+            Compare value as text with a few starting character should not be same.
+            This uses <see cref="F:System.StringComparison.OrdinalIgnoreCase"/> to compare the data.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.NotEndWith">
+            <summary>
+            Compare value as text with a few last character should not be same.
+            This uses <see cref="F:System.StringComparison.OrdinalIgnoreCase"/> to compare the data.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.Greater">
+            <summary>
+            Compare value as Numeric data where filed value should grater/higher than provided value.
+            This uses <see cref="T:System.Double"/> to compare the data.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.Less">
+            <summary>
+            Compare value as Numeric data where filed value should lower/smaller than provided value.
+            This uses <see cref="T:System.Double"/> to compare the data.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.GreaterOrEqual">
+            <summary>
+            Compare value as Numeric data where filed value should grater/higher or equal than provided value.
+            This uses <see cref="T:System.Double"/> to compare the data.
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.IO.Data.SearchOption.LessOrEqual">
+            <summary>
+            Compare value as Numeric data where filed value should lower/smaller or equal than provided value.
+            This uses <see cref="T:System.Double"/> to compare the data.
+            </summary>
+        </member>
+        <member name="T:iPAHeartBeat.Core.IO.Data.TextDataReader">
+            <summary>
+            Helper or Utility code to read text file as tabular format using nested collection.
+            </summary>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.ReadRecordsFromFile(System.String,System.String)">
+            <summary>
+            Will read test file and return each line of text as data record to process later.
+            <br/>NOTE: Text processor will also ignore comment lines which are start with hash-sign.
+            </summary>
+            <param name="path">File location where needs to be check.</param>
+            <param name="fileName">name of the file which needs to be check.</param>
+            <returns>List of string from the file.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.ReadRecordsFromFile(System.String,System.String,System.Char)">
+            <summary>
+            Will read test file and return each line of text as data record to process later.
+            <br/>NOTE: Text processor will also ignore comment lines which are start with hash-sign.
+            </summary>
+            <param name="path">File location where needs to be check.</param>
+            <param name="fileName">name of the file which needs to be check.</param>
+            <param name="recordDelimiter">a single char which will be use to identify data part as next record.</param>
+            <returns>List of string from the file.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.GetDataFromFile(System.String,System.String)">
+            <summary>
+            Will read test file as data store. for a record identification it will use Unix new line character while for getting a field from record it will use comma "," as identifier.
+            <br/>NOTE: Text processor will also ignore comment lines which are start with hash-sign.
+            </summary>
+            <param name="path">File location where needs to be check.</param>
+            <param name="fileName">name of the file which needs to be check.</param>
+            <returns>Nested List of string from the file as parent list will be records and nested list of string will be fields data of the record.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.GetDataFromFile(System.String,System.String,System.Char)">
+            <summary>
+            Will read test file as data store. for a record identification it will use Unix new line character.
+            <br/>NOTE: Text processor will also ignore comment lines which are start with hash-sign.
+            </summary>
+            <param name="path">File location where needs to be check.</param>
+            <param name="fileName">name of the file which needs to be check.</param>
+            <param name="fieldDelimiter">a single char which will be use to identify data part as next field.</param>
+            <returns>Nested List of string from the file as parent list will be records and nested list of string will be fields data of the record.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.GetDataFromFile(System.String,System.String,System.Char,System.Char)">
+            <summary>
+            Will read test file as data store.
+            <br/>NOTE: Text processor will also ignore comment lines which are start with hash-sign.
+            </summary>
+            <param name="path">File location where needs to be check.</param>
+            <param name="fileName">name of the file which needs to be check.</param>
+            <param name="recordDelimiter">a single char which will be use to identify data part as next record.</param>
+            <param name="fieldDelimiter">a single char which will be use to identify data part as next field.</param>
+            <returns>Nested List of string from the file as parent list will be records and nested list of string will be fields data of the record.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.GetRecordsFromText(System.String)">
+            <summary>
+            Will process provide raw text return each line of text as data record to process later.
+            <br/>NOTE: Text processor will also ignore comment lines which are start with hash-sign.
+            </summary>
+            <param name="rawDataText">Raw text data to process.</param>
+            <returns>List of string from the file.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.GetRecordsFromText(System.String,System.Char)">
+            <summary>
+            Will process provide raw text return each line of text as data record to process later.
+            <br/>NOTE: Text processor will also ignore comment lines which are start with hash-sign.
+            </summary>
+            <param name="rawDataText">Raw text data to process.</param>
+            <param name="recordDelimiter">a single char which will be use to identify data part as next record.</param>
+            <returns>List of string from the file.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.GetDataFromText(System.String)">
+            <summary>
+            Will process provide raw text and return Nested string list as data. for a record identification it will use Unix new line character while for getting a field from record it will use comma "," as identifier.
+            <br/>NOTE: Text processor will also ignore comment lines which are start with hash-sign.
+            </summary>
+            <param name="rawDataText">Raw text data to process.</param>
+            <returns>Nested List of string from the file as parent list will be records and nested list of string will be fields data of the record.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.GetDataFromText(System.String,System.Char)">
+            <summary>
+            Will process provide raw text and return Nested string list as data. for a record identification it will use Unix new line character.
+            <br/>NOTE: Text processor will also ignore comment lines which are start with hash-sign.
+            </summary>
+            <param name="dataText">Raw text data to process.</param>
+            <param name="fieldDelimiter">a single char which will be use to identify data part as next record.</param>
+            <returns>Nested List of string from the file as parent list will be records and nested list of string will be fields data of the record.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.GetDataFromText(System.String,System.Char,System.Char)">
+            <summary>
+            Will process provide raw text and return Nested string list as data.
+            <br/>NOTE: Text processor will also ignore comment lines which are start with hash-sign.
+            </summary>
+            <param name="rawDataText">Raw text data to process.</param>
+            <param name="recordDelimiter">a single char which will be use to identify data part as next record.</param>
+            <param name="fieldDelimiter">a single char which will be use to identify data part as next field in the record.</param>
+            <returns>Nested List of string from the file as parent list will be records and nested list of string will be fields data of the record.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.SearchRecordFromData(System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.String)">
+            <summary>
+            Helper Method to Search Records from the Nested collection of string data based on  a Single filed.
+            <br/> NOTE: this System is un-optimized and  uses lots-of string operation, data-type check, temp data type conversation which leads to High CPU uses.
+            </summary>
+            <param name="data">Nested collection of the string data set.</param>
+            <param name="searchValue">The Value which needs to search in data collection.</param>
+            <returns>The nested collection of string data which matched with options.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.SearchRecordFromData(System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.String,System.Int32)">
+            <summary>
+            Helper Method to Search Records from the Nested collection of string data based on  a Single filed.
+            <br/> NOTE: this System is un-optimized and  uses lots-of string operation, data-type check, temp data type conversation which leads to High CPU uses.
+            </summary>
+            <param name="data">Nested collection of the string data set.</param>
+            <param name="searchValue">The Value which needs to search in data collection.</param>
+            <param name="fieldNo">The zero-based filed number of data in which you need to check value in sub collection.</param>
+            <returns>The nested collection of string data which matched with options.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.SearchRecordFromData(System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.String,iPAHeartBeat.Core.IO.Data.SearchOption)">
+            <summary>
+            Helper Method to Search Records from the Nested collection of string data based on  a Single filed.
+            <br/> NOTE: this System is un-optimized and  uses lots-of string operation, data-type check, temp data type conversation which leads to High CPU uses.
+            </summary>
+            <param name="data">Nested collection of the string data set.</param>
+            <param name="searchValue">The Value which needs to search in data collection.</param>
+            <param name="searchCriteria">The compare option to use with data in Field and Search Value provided.</param>
+            <returns>The nested collection of string data which matched with options.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.SearchRecordFromData(System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.String,System.Int32,iPAHeartBeat.Core.IO.Data.SearchOption)">
+            <summary>
+            Helper Method to Search Records from the Nested collection of string data based on  a Single filed.
+            <br/> NOTE: this System is un-optimized and  uses lots-of string operation, data-type check, temp data type conversation which leads to High CPU uses.
+            </summary>
+            <param name="data">Nested collection of the string data set.</param>
+            <param name="searchValue">The Value which needs to search in data collection.</param>
+            <param name="fieldNo">The zero-based filed number of data in which you need to check value in sub collection.</param>
+            <param name="searchCriteria">The compare option to use with data in Field and Search Value provided.</param>
+            <returns>The nested collection of string data which matched with options.</returns>
+        </member>
+        <member name="M:iPAHeartBeat.Core.IO.Data.TextDataReader.CheckTypeForNumbers(System.Object)">
+            <summary>
+            Internal data type checker to use Data query option in raw Text.
+            </summary>
+            <param name="data">Data which need to indemnify it data type as number.</param>
+            <returns>true if data type is any kind of number otherwise false.</returns>/
+        </member>
+    </members>
+</doc>

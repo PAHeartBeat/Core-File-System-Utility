@@ -48,11 +48,13 @@
   </PropertyGroup>
 
   <PropertyGroup Label="Project Meta and settings.">
-    <PackageId>__Project-Id__</PackageId>
-    <PackageTags>C#, Utils Abstraction,</PackageTags>
-    <Description>__Project-Description__</Description>
+    <PackageId>iPAHeartBeat.Core.FileSystemUtility</PackageId>
+    <PackageTags>C#,File,Text,Text Reader, File Read-Write</PackageTags>
+    <Description>This system is created to provide utility to Read write Files as Text or Bytes.
+      This system also provides Text Converter to read CSV or other Delimiter based data in Nested
+      List format.</Description>
 
-    <RootNamespace>__Namespace__</RootNamespace>
+    <RootNamespace>iPAHeartBeat.Core</RootNamespace>
     <AssemblyName>$(PackageId)</AssemblyName>
     <AssemblyVersion>1.0.0.1</AssemblyVersion>
     <FileVersion>1.0.0.1</FileVersion>
@@ -64,7 +66,7 @@
 
   <PropertyGroup Label="Project Git Info">
     <PackageProjectUrl/>
-    <RepositoryUrl/>
+    <RepositoryUrl>https://github.com/PAHeartBeat/File-System-Utility</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
@@ -80,8 +82,15 @@
   <ItemGroup>
     <AdditionalFiles Include="stylecop.json"/>
   </ItemGroup>
+
   <ItemGroup>
     <None Include="LICENSE.md" Pack="true" PackagePath=""/>
     <None Include="README.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="iPAHeartBeat.Core.Abstraction" Version="1.0.0-RC3"/>
+    <PackageReference Include="iPAHeartBeat.Core.Dependency" Version="2.0.0"/>
+    <PackageReference Include="iPAHeartBeat.Core.Extensions" Version="2.0.0"/>
   </ItemGroup>
 </Project>
