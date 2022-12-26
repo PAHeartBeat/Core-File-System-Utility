@@ -1,0 +1,32 @@
+{
+	"name": "com.ipaheartbeat.core.file-system-utility",
+	"version": "1.0.0-RC1",
+	"displayName": "Core File-System-Utility",
+	"description": "This system is created to provide utility to Read write Files as Text or Bytes. This system also provides Text Converter to read CSV or other Delimiter based data in Nested List format.",
+	"license": "LGPL-3.0-or-later",
+	"unity": "2017.1",
+	"dependencies": {
+		"com.ipaheartbeat.core.abstraction": "1.0.0-RC3"
+	},
+	"keywords": [
+		"C#",
+		"File",
+		"Text",
+		"Text Reader",
+		"File Read-Write"
+	],
+	"author": {
+		"name": "Ankur Ranpariya",
+		"email": "ankur30884@gmail.com"
+	},
+	"samples": [],
+	"type": "library",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PAHeartBeat/File-System-Utility"
+	},
+	"bugs": {
+		"url": "https://github.com/PAHeartBeat/File-System-Utility/issues",
+		"email": "ankur30884@gmail.com"
+	}
+}
