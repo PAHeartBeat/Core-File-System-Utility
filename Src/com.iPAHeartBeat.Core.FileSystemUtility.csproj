@@ -96,8 +96,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="iPAHeartBeat.Core.Abstraction" Version="[1.0.0,2)" />
-		<PackageReference Include="iPAHeartBeat.Core.Dependency" Version="[2.0.0,3)" />
-		<PackageReference Include="iPAHeartBeat.Core.Extensions" Version="[2.0.0,3)" />
+		<PackageReference Include="iPAHeartBeat.Core.Abstraction" Version="[1.0.1,2)" />
+		<PackageReference Include="iPAHeartBeat.Core.Dependency" Version="[2.0.1,3)" />
+		<PackageReference Include="iPAHeartBeat.Core.Extensions" Version="[2.0.1,3)" />
 	</ItemGroup>
 </Project>
