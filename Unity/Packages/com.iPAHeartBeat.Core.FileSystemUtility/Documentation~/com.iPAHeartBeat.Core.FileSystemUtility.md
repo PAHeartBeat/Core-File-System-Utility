@@ -1,7 +1,12 @@
-# iPAHeartBeat-Core-File-System-Utility
+# iPAHeartBeat File System Utility
 
 ## Introduction
-This system is created to provide utility to Read write Files as Text or Bytes. This system also provides Text Converter to read CSV or other Delimiter based data in Nested List format.
+Introducing the File Management System
+
+This system has been developed to offer a powerful utility for working with files. It allows you to seamlessly read and write files in both text and byte formats. Additionally, it includes a handy Text Converter that can read CSV and other delimiter-based data and transform it into a nested list format.
+
+In simple terms, this system simplifies the process of handling files, making it easier to work with textual and binary data. Whether you're just starting out in programming or consider yourself a coding expert, this tool will be a valuable asset in your toolkit.
+
 
 ## Documentation
 Documentation is not added yet. please follow XML Doc comments from XML Doc file.

@@ -1,34 +1,34 @@
 {
-	"name": "com.ipaheartbeat.core.file-system-utility",
-	"version": "1.0.0-RC1",
-	"displayName": "Core File-System-Utility",
-	"description": "This system is created to provide utility to Read write Files as Text or Bytes. This system also provides Text Converter to read CSV or other Delimiter based data in Nested List format.",
-	"license": "LGPL-3.0-or-later",
-	"unity": "2017.1",
-	"dependencies": {
-		"com.ipaheartbeat.core.abstraction": "1.0.0-RC3",
-		"com.ipaheartbeat.core.dependency": "2.0.0",
-		"com.ipaheartbeat.core.extensions": "2.0.0"
-	},
-	"keywords": [
-		"C#",
-		"File",
-		"Text",
-		"Text Reader",
-		"File Read-Write"
-	],
-	"author": {
-		"name": "Ankur Ranpariya",
-		"email": "ankur30884@gmail.com"
-	},
-	"samples": [],
-	"type": "library",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/PAHeartBeat/File-System-Utility"
-	},
-	"bugs": {
-		"url": "https://github.com/PAHeartBeat/File-System-Utility/issues",
-		"email": "ankur30884@gmail.com"
-	}
+  "name": "com.ipaheartbeat.core.file-system-utility",
+  "version": "1.0.1",
+  "displayName": "Core File-System-Utility",
+  "description": "Introducing the File Management System\n\nThis system has been developed to offer a powerful utility for working with files. It allows you to seamlessly read and write files in both text and byte formats. Additionally, it includes a handy Text Converter that can read CSV and other delimiter-based data and transform it into a nested list format.\n\nIn simple terms, this system simplifies the process of handling files, making it easier to work with textual and binary data. Whether you're just starting out in programming or consider yourself a coding expert, this tool will be a valuable asset in your toolkit.",
+  "license": "LGPL-3.0-or-later",
+  "unity": "2017.1",
+  "dependencies": {
+    "com.ipaheartbeat.core.abstraction": "1.0.1",
+    "com.ipaheartbeat.core.dependency": "2.0.1",
+    "com.ipaheartbeat.core.extensions": "2.0.1"
+  },
+  "keywords": [
+    "C#",
+    "File",
+    "Text",
+    "Text Reader",
+    "File Read-Write"
+  ],
+  "author": {
+    "name": "Ankur Ranpariya",
+    "email": "ankur30884@gmail.com"
+  },
+  "samples": [],
+  "type": "library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PAHeartBeat/File-System-Utility"
+  },
+  "bugs": {
+    "url": "https://github.com/PAHeartBeat/File-System-Utility/issues",
+    "email": "ankur30884@gmail.com"
+  }
 }
